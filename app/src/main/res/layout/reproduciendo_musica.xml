@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#e9ebee">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:visibility="visible"
+        android:background="@drawable/icono"
+        android:adjustViewBounds="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/previus"
+        android:layout_weight="0.13"
+        android:background="@android:drawable/ic_media_previous"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:nestedScrollingEnabled="false"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:textSize="20dp"
+        android:visibility="visible"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#060606" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pause"
+        android:background="@android:drawable/ic_media_pause"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.13"
+        android:layout_toRightOf="@+id/previus"
+        android:layout_toEndOf="@+id/previus"
+        android:backgroundTint="#060606" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_weight="0.13"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:textSize="20dp"
+        android:visibility="visible"
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/nomartista"
+        android:layout_toRightOf="@+id/pause"
+        android:layout_toEndOf="@+id/pause"
+        android:backgroundTint="#060606" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:background="@android:drawable/ic_media_next"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:layout_weight="0.13"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/play"
+        android:layout_toEndOf="@+id/play"
+        android:backgroundTint="#060606" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canción:"
+        android:id="@+id/nombrecancion"
+        android:visibility="visible"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/nomartista"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="..."
+        android:id="@+id/decirnombrecancion"
+        android:layout_above="@+id/nomartista"
+        android:layout_toRightOf="@+id/nombrecancion"
+        android:layout_toEndOf="@+id/nombrecancion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artista:"
+        android:id="@+id/nomartista"
+        android:textSize="22dp"
+        android:visibility="visible"
+        android:elegantTextHeight="false"
+        android:textStyle="bold"
+        android:layout_above="@+id/volverActivityMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="..."
+        android:id="@+id/decirnombreArtista"
+        android:layout_alignBottom="@+id/nomartista"
+        android:layout_toRightOf="@+id/nomartista"
+        android:layout_toEndOf="@+id/nomartista" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volverActivityMain"
+        android:background="@android:drawable/ic_menu_revert"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#000000" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/verpaginaWeb"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/nombrecancion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/imageView2" />
+
+</RelativeLayout>

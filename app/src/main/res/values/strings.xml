@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reproductor Musica (Final)</string>
+    <string name="nombre_artista">Nombre artista</string>
+    <string name="agregar_a_playlist">Agregar a Playlist</string>
+    <string name="descargar_letra_canci_n">Descargar Letra Canción</string>
+    <string name="next">Next</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+	<string name="NombredelaCancion">Widget</string>
+</resources>
